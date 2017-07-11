@@ -1,0 +1,90 @@
+# move
+
+h : right
+j : down
+k : up
+l : left
+
+w : move next word 
+e : move word end
+b : move word top
+
+% : move block end ({[]})
+
+gg : file top
+G : file bottom
+
+^ : line first
+$ : line end
+
+ctrl+b : page back
+ctrl+f : page forward
+ctrl+d : page down half
+ctrl+u : page up half
+
+H : screen top
+M : screen middle
+L : screen bottom
+
+# Edit
+i : insert before
+I : insert line first
+a : insert after
+A : insert line end
+o : insert line below
+O : insert line above
+r : replace character
+cc : delete line and enter insert
+cw : delete word and enter insert
+s : delete character and enter insert
+S : cc
+
+u : undo
+ctrl+r : redo
+. : repeat last command
+
+yy : yank line
+yw : yank word
+y$ : yank line end
+p : past after
+P : past before
+dd : cut line
+dw : cut word
+d$ : cut line end
+x : cut character
+
+[Insert Mode]
+Ctrl+h : backspace
+Ctrl+w : delete word
+Ctrl+u : delete line
+
+# End
+:w : save
+:wq : save and end
+:x : :wq
+ZZ : :wq
+:q : end
+:q! : not save and end
+ZQ : :q!
+
+#search and replace
+/x : serch x
+?x : serch x 
+n : serch next
+N : sercb before
+:%s/old/new/g : replace all
+:%s/old/new/gc : replace all confirm
+:noh : remove search lighlight
+
+:vimgrep /pattern/ {file} : grep
+:cn : jump next
+:cp : jump previous
+:copen : open matches 
+
+insert_mode/partical-vim.txt
+Practical Vim, by Drew Nei;
+Read Drew Neil's Practical Vim.
+
+
+
+
